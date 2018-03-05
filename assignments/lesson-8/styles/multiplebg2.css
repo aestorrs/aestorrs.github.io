@@ -1,0 +1,7 @@
+ body
+{
+  width: 100%;
+  height: 400px;
+  background: 
+      url("https://images.pexels.com/photos/265013/pexels-photo-265013.jpeg?h=350&dpr=2&auto=compress&cs=tinysrgb") center bottom no-repeat, url("https://images.pexels.com/photos/265047/pexels-photo-265047.jpeg?h=350&dpr=2&auto=compress&cs=tinysrgb") right top no-repeat;
+}
