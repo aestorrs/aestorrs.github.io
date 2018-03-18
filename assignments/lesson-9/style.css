@@ -1,0 +1,42 @@
+html {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+table {
+	table-layout: fixed;
+	width: 30%;
+  border-collapse: collapse;
+  border: 2px solid black;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+td {
+  text-align: center;
+}
+
+table thead tr:first-child{background-color: #7fb9c2; }
+table thead tr:nth-child(2){background-color: #628ca6;}
+
+tbody tr:nth-child(even) td {
+  background-color: #e7ffed;
+}
+
+tbody tr:nth-child(odd) td {
+  background-color: #e7f0ed ;
+}
+
+table tfoot tr:first-child{background-color: #7fb9c2;}
+
+caption {
+  padding: 10px;
+}
+tfoot 
+{
+font-size: 0.5rem;	
+}
