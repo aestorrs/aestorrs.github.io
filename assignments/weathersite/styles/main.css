@@ -5,6 +5,9 @@ body { 	font-family: Palatino, "Palatino Linotype"; font-size: 16px;	}
 header, nav, main, footer 
 {
 		width: 100%;
+	  max-width: 1280px;
+	  margin-left: auto;
+	  margin-right: auto;
 }
 h1, h2, h3, h4, h5, h6 
 {
@@ -12,31 +15,34 @@ h1, h2, h3, h4, h5, h6
 }
 	header 
 {
-		background-color: #eee;		
+		background-color: #eee;
+		padding-left: 10px;
   }
-.hamburger { display: block;position: absolute;top: 2.0rem;right: 1.25rem; }
+.hamburger { display: none;}
 
 .navigation { list-style: none; padding-left: 0; }
-.navigation li { display: none; }
+.navigation li { display: block; }
+
 @media only screen and (max-width: 37.5em) {
-    .navigation.responsive { position: left; }
+	.hamburger {display: block; position: absolute;top: 2.0rem;right: 1.25rem; }
+    .navigation.responsive { position: relative; display: block; }
     .navigation.responsive li { background-color: #eee; display: block; width: 100%; margin: 2px 0; border: 1px solid #ddd; }
     .navigation.responsive li a {   padding: 1rem; text-align: center;  display: block; text-decoration:none; }
     .navigation.responsive li a:hover { background-color: #ddd; }
+	  .navigation {display: none; }
 }
 	nav 
 	{
-		display: block;		
+		display: inline;		
 	}
 	nav button {}
-	nav ul 
-{	
-		display: none;
+	nav ul 	
+{
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 }
-	nav ul li {}
+	nav ul li { padding: 10px; float: left; display: block; }
 	nav ul li a {}
 	nav ul li.active a {}
 	nav ul li a:hover {}
@@ -72,17 +78,17 @@ h1, h2, h3, h4, h5, h6
 		}
 		.smallImg {
 			width: 30%;
+			max-width: 100px;
 			padding: 10px;
 		}
 		.medImg {
-			width: 90%;
+			max-width: 90%;
 			padding: 3%;
 		}
 		.current {
-			width: 100%;
+			width: 49%;
 			display: block;
 			position: relative;
-			clear:both;
 			height: 100%;
 		}
 		.current h4 {
@@ -90,8 +96,7 @@ h1, h2, h3, h4, h5, h6
 			float: left;
 			display: inline;
 			position: relative;
-			width: 30%;
-			margin-left: 20%;
+			width: 100%;
 			line-height: 16px;
 		}
 		.current picture {
@@ -166,4 +171,9 @@ input.submitButton {
 	padding: .2em;
 	background-color:skyblue;
 	box-shadow: 4px 4px 9px grey;
+}
+.clearFloats::after {
+	content: "";
+	clear: both;
+	display: table;
 }

@@ -41,23 +41,25 @@
       <img src="images/franklin-original.jpeg" alt="Valley Picture" sizes="(max-width: 40em)"
 			srcset="images/franklin-original.jpeg 200w, images/franklin-original.jpeg 400w, images/franklin-original.jpeg 600w"		 >
     </figure>
-    <section>
+		<section class="condenseLarge">
       <h3>Weather Summary</h3>
-		   <div class="current">
-        <h4>Sunny</h4>
+		   <div class="current rightImg">
         <picture>
             <img src="images/Sunny.png" alt="Sunshine" class="rightImg medImg">
         </picture>
       </div>
-			<div class="current"></div>
-      <div class="highlow">
+			<div class="current leftImg">
+				<h4>Sunny</h4>
+      	<div class="highlow">
         <p>High: 90&deg;F</p>  
         <p>Low:66&deg;F</p> 
       </div>   
       <div class="conditions">
         <p>Precipitation:0%</p>  
         <p>Wind Speed:5 mph SW</p>  
-      </div>           
+      </div>
+			</div>
+			<div class="clearFloats"></div>
     </section>
         
     <section class="forecast">
