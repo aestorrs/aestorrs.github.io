@@ -133,7 +133,7 @@ fieldset {
 	border: slategrey solid 2.5px;
 }
 legend {
-	margin-left: 5%;
+	margin-left: 10%;
 	padding: .9em;
 	border-radius: .9em;
 	font-size: 1.5em;
@@ -147,6 +147,8 @@ label span {
 	font-size: 1.2em;
 	padding-top: .3em;
 	padding-bottom: .4em;
+	margin-left: .5em;
+	margin-right: .5em;
 }
 input.submitButton {
 	-webkit-appearance: none;
@@ -159,6 +161,10 @@ input.submitButton {
 	padding: .2em;
 	background-color:teal;
 	box-shadow: 4px 4px 9px grey;
+}
+
+.iframe {
+	text-align: center;
 }
 .clearFloats::after {
 	content: "";
